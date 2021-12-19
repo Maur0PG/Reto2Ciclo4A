@@ -34,9 +34,9 @@ public class ProductService {
         if (product.getId() != null) {
             Optional<Product> dbProduct = productRepository.getProduct(product.getId()); 
             if (!dbProduct.isEmpty()) {
-                /*if (product.getBrand() != null) {
+                if (product.getBrand() != null) {
                     dbProduct.get().setBrand(product.getBrand());
-                }*/
+                }
                 if (product.getCategory() != null) {
                     dbProduct.get().setCategory(product.getCategory());
                 }
